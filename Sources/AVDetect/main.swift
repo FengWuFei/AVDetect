@@ -1,6 +1,5 @@
 import SwiftFFmpeg
 import Foundation
-import NIO
 
 logSetCallback { log in }
 

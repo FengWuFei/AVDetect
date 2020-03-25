@@ -7,12 +7,11 @@ let package = Package(
     name: "AVDetect",
     dependencies: [
         .package(url: "https://github.com/FengWuFei/SwiftFFmpeg.git", .branch("master")),
-        .package(url: "https://github.com/apple/swift-nio.git", from: "2.13.1"),
     ],
     targets: [
         .target(
             name: "AVDetect",
-            dependencies: ["SwiftFFmpeg", "NIO"]),
+            dependencies: ["SwiftFFmpeg"]),
         .testTarget(
             name: "AVDetectTests",
             dependencies: ["AVDetect"]),
