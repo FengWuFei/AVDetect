@@ -8,7 +8,7 @@ struct LiveStream: DetectResource {
     var url: String
 }
 
-let streams = [LiveStream(name: "Test1", url: "udp://226.151.1.131:2000")]
+let streams = [LiveStream(name: "Test1", url: "udp://226.151.1.131:2000"), LiveStream(name: "Test2", url: "udp://226.151.1.132:2000"), LiveStream(name: "Test3", url: "udp://226.151.1.133:2000"), LiveStream(name: "Test4", url: "udp://226.151.1.134:2000")]
 
 let queue = DispatchQueue(label: "com.avdetect", attributes: .concurrent)
 
